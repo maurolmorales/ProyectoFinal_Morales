@@ -1,0 +1,17 @@
+.morososDivChildren{
+  width: 25rem;
+  border: 1px solid black;
+  margin-bottom: 50px;
+  padding: 0.5rem;
+  color: red;
+}
+
+header{
+  position: relative;
+}
+.recordatorioDiv{
+  color: navy;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emulación</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/estilos.css" />
+  </head>
+  <body>
+    <header class="h-25 d-flex bg-secondary justify-content-center">
+      <h1 class="text-white">Gestor de Cobranzas</h1>
+    </header>
+    <main>
+      <section class="row">
+        <!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+        <div class="container p-5 col" style="max-width: 500px">
+          <h4>Calcular Punitorio</h4>
+          <form>
+            <!-- Nombre -->
+            <div class="mb-3">
+              <label for="saldo" class="form-label">Saldo</label>
+              <input
+                type="number"
+                class="form-control"
+                id="puniSaldo"
+                required
+              />
+            </div>
+
+            <div class="mb-3">
+              <label for="tasa" class="form-label">Tasa</label>
+              <input
+                type="number"
+                class="form-control"
+                id="puniTasa"
+                required
+              />
+            </div>
+
+            <div class="mb-3">
+              <label for="dias" class="form-label">Días</label>
+              <input
+                type="number"
+                class="form-control"
+                id="puniDias"
+                required
+              />
+            </div>
+
+            <!-- Botón -->
+            <button type="submit" class="btn btn-primary" id="puniButton">
+              Enviar
+            </button>
+          </form>
+          <div
+            class="mb-3"
+            id="puniResultado"
+            style="min-height: 50px; padding: 2rem"
+          ></div>
+        </div>
+
+        <!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+        <div class="container p-5 col" style="max-width: 500px">
+          <h4>Verificar Morosos</h4>
+          <button type="submit" class="btn btn-primary" id="moroButton">
+            Enviar
+          </button>
+          <div
+            class="mb-3"
+            id="moroResultado"
+            style="min-height: 50px; padding: 2rem"
+          ></div>
+        </div>
+
+        <!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+        <div class="container p-5 col" style="max-width: 500px">
+          <h4>Ingreso Pago</h4>
+          <form>
+            <!-- Nombre -->
+            <div class="mb-3">
+              <label for="idCliente" class="form-label">id del Cliente</label>
+              <input
+                type="number"
+                class="form-control"
+                id="IPidCliente"
+                required
+              />
+            </div>
+
+            <div class="mb-3">
+              <label for="pago" class="form-label">Pago</label>
+              <input type="number" class="form-control" id="IPpago" required />
+            </div>
+
+            <!-- Botón -->
+            <button type="submit" class="btn btn-primary" id="IPButton">
+              Enviar
+            </button>
+          </form>
+          <div
+            class="mb-3"
+            id="IPResultado"
+            style="min-height: 50px; padding: 2rem"
+          ></div>
+        </div>
+
+        <!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+        <div class="container p-5 col recordatorioDiv" style="max-width: 700px" >
+          <h3>Recordatorios pendientes de llamada. <span id="cantRecord">0</span></h3>
+          <div  id="recordatorioDiv"></div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+
+    <script src="./js/funciones.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

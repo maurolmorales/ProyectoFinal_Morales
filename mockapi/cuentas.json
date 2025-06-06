@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "clienteId": 1,
+    "fecha_emision": "2024-11-20",
+    "monto_total": 100000,
+    "monto_pagado": 60000,
+    "saldo_pendiente": 40000,
+    "cuotas": 10,
+    "estado": "vigente"
+  },
+  {
+    "id": 2,
+    "clienteId": 2,
+    "fecha_emision": "2023-08-15",
+    "monto_total": 50000,
+    "monto_pagado": 10000,
+    "saldo_pendiente": 40000,
+    "cuotas": 5,
+    "estado": "en mora"
+  },
+  {
+    "id": 3,
+    "clienteId": 3,
+    "fecha_emision": "2023-01-10",
+    "monto_total": 75000,
+    "monto_pagado": 75000,
+    "saldo_pendiente": 0,
+    "cuotas": 10,
+    "estado": "cancelado"
+  },
+  {
+    "id": 4,
+    "clienteId": 4,
+    "fecha_emision": "2023-05-05",
+    "monto_total": 30000,
+    "monto_pagado": 5000,
+    "saldo_pendiente": 25000,
+    "cuotas": 6,
+    "estado": "en mora"
+  },
+  {
+    "id": 5,
+    "clienteId": 5,
+    "fecha_emision": "2024-01-10",
+    "monto_total": 60000,
+    "monto_pagado": 30000,
+    "saldo_pendiente": 30000,
+    "cuotas": 6,
+    "estado": "vigente"
+  },
+  {
+    "id": 6,
+    "clienteId": 6,
+    "fecha_emision": "2023-10-20",
+    "monto_total": 45000,
+    "monto_pagado": 45000,
+    "saldo_pendiente": 0,
+    "cuotas": 3,
+    "estado": "cancelado"
+  },
+  {
+    "id": 7,
+    "clienteId": 7,
+    "fecha_emision": "2023-06-25",
+    "monto_total": 70000,
+    "monto_pagado": 20000,
+    "saldo_pendiente": 50000,
+    "cuotas": 7,
+    "estado": "en mora"
+  },
+  {
+    "id": 8,
+    "clienteId": 8,
+    "fecha_emision": "2022-10-01",
+    "monto_total": 90000,
+    "monto_pagado": 90000,
+    "saldo_pendiente": 0,
+    "cuotas": 9,
+    "estado": "cancelado"
+  }
+]

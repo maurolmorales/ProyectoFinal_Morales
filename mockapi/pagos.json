@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "cuentaId": 1,
+    "fecha_pago": "2024-12-01",
+    "monto": 20000,
+    "medio_pago": "transferencia"
+  },
+  {
+    "id": 2,
+    "cuentaId": 1,
+    "fecha_pago": "2025-01-01",
+    "monto": 40000,
+    "medio_pago": "efectivo"
+  },
+  {
+    "id": 3,
+    "cuentaId": 2,
+    "fecha_pago": "2023-09-01",
+    "monto": 10000,
+    "medio_pago": "transferencia"
+  },
+  {
+    "id": 4,
+    "cuentaId": 3,
+    "fecha_pago": "2023-12-15",
+    "monto": 75000,
+    "medio_pago": "tarjeta"
+  },
+  {
+    "id": 5,
+    "cuentaId": 4,
+    "fecha_pago": "2023-06-01",
+    "monto": 5000,
+    "medio_pago": "efectivo"
+  },
+  {
+    "id": 6,
+    "cuentaId": 5,
+    "fecha_pago": "2024-02-01",
+    "monto": 30000,
+    "medio_pago": "transferencia"
+  },
+  {
+    "id": 7,
+    "cuentaId": 6,
+    "fecha_pago": "2023-11-01",
+    "monto": 45000,
+    "medio_pago": "tarjeta"
+  },
+  {
+    "id": 8,
+    "cuentaId": 7,
+    "fecha_pago": "2023-07-15",
+    "monto": 20000,
+    "medio_pago": "efectivo"
+  },
+  {
+    "id": 9,
+    "cuentaId": 8,
+    "fecha_pago": "2023-01-10",
+    "monto": 90000,
+    "medio_pago": "transferencia"
+  }
+]

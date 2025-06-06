@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "nombre": "Juan Pérez",
+    "dni": "30123456",
+    "telefono": "1156781234",
+    "email": "juan.perez@mail.com",
+    "direccion": "Av. Rivadavia 1234, CABA",
+    "estado": "activo",
+    "fecha_alta": "2024-11-15"
+  },
+  {
+    "id": 2,
+    "nombre": "María Gómez",
+    "dni": "28900123",
+    "telefono": "1165439876",
+    "email": "maria.gomez@mail.com",
+    "direccion": "Calle Falsa 123, La Plata",
+    "estado": "moroso",
+    "fecha_alta": "2023-08-01"
+  },
+  {
+    "id": 3,
+    "nombre": "Carlos Rodríguez",
+    "dni": "34567890",
+    "telefono": "1134598273",
+    "email": "carlos.r@mail.com",
+    "direccion": "San Martín 789, Córdoba",
+    "estado": "activo",
+    "fecha_alta": "2022-12-12"
+  },
+  {
+    "id": 4,
+    "nombre": "Lucía Fernández",
+    "dni": "31234567",
+    "telefono": "1178912345",
+    "email": "lucia.fernandez@mail.com",
+    "direccion": "Mitre 456, Mendoza",
+    "estado": "moroso",
+    "fecha_alta": "2023-04-25"
+  },
+  {
+    "id": 5,
+    "nombre": "Ricardo López",
+    "dni": "29876543",
+    "telefono": "1167894321",
+    "email": "ricardo.lopez@mail.com",
+    "direccion": "Belgrano 321, Rosario",
+    "estado": "activo",
+    "fecha_alta": "2024-01-03"
+  },
+  {
+    "id": 6,
+    "nombre": "Sofía Martínez",
+    "dni": "33456789",
+    "telefono": "1198761234",
+    "email": "sofia.martinez@mail.com",
+    "direccion": "Sarmiento 999, Mar del Plata",
+    "estado": "activo",
+    "fecha_alta": "2023-10-10"
+  },
+  {
+    "id": 7,
+    "nombre": "Diego Ramírez",
+    "dni": "30111222",
+    "telefono": "1122334455",
+    "email": "diego.ramirez@mail.com",
+    "direccion": "Alsina 2020, Salta",
+    "estado": "moroso",
+    "fecha_alta": "2023-06-20"
+  },
+  {
+    "id": 8,
+    "nombre": "Camila Torres",
+    "dni": "32222333",
+    "telefono": "1144556677",
+    "email": "camila.torres@mail.com",
+    "direccion": "Urquiza 4040, Neuquén",
+    "estado": "activo",
+    "fecha_alta": "2022-09-05"
+  }
+]

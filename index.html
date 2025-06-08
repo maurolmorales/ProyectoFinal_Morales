@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Emulación</title>
-    <link rel="icon" type="image/png" sizes="16x16" href="//res.cloudinary.com/hdsqazxtw/image/upload/v1558445734/favicon-16x16_glx69e.png">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="//res.cloudinary.com/hdsqazxtw/image/upload/v1558445734/favicon-16x16_glx69e.png"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -23,7 +28,6 @@
         <div class="container p-5 col" style="max-width: 500px">
           <h4>Calcular Punitorio</h4>
           <form>
-            <!-- Nombre -->
             <div class="mb-3">
               <label for="saldo" class="form-label">Saldo</label>
               <input
@@ -54,7 +58,6 @@
               />
             </div>
 
-            <!-- Botón -->
             <button type="submit" class="btn btn-primary" id="puniButton">
               Enviar
             </button>
@@ -83,7 +86,6 @@
         <div class="container p-5 col" style="max-width: 500px">
           <h4>Ingreso Pago</h4>
           <form>
-            <!-- Nombre -->
             <div class="mb-3">
               <label for="idCliente" class="form-label">id del Cliente</label>
               <input
@@ -99,7 +101,6 @@
               <input type="number" class="form-control" id="IPpago" required />
             </div>
 
-            <!-- Botón -->
             <button type="submit" class="btn btn-primary" id="IPButton">
               Enviar
             </button>
@@ -112,10 +113,38 @@
         </div>
 
         <!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
-        <div class="container p-5 col recordatorioDiv" style="max-width: 700px" >
-          <h3>Recordatorios pendientes de llamada. <span id="cantRecord">0</span></h3>
-          <div  id="recordatorioDiv"></div>
-        </div>
+
+        <section class="d-flex justify-content-between">
+          <div class="container p-5 col" style="max-width: 500px">
+            <h4>Resumen de Cliente</h4>
+            <input
+              type="number"
+              id="resumenInput"
+              class="form-control mb-3"
+              placeholder="Ingrese ID del Cliente"
+            />
+            <button class="btn btn-secondary" id="resumenButton">
+              Buscar Resumen
+            </button>
+            <div
+              id="resumenResultado"
+              style="min-height: 50px; padding: 2rem"
+            ></div>
+          </div>
+
+          <!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+
+          <div
+            class="container p-5 col recordatorioDiv"
+            style="max-width: 700px"
+          >
+            <h3>
+              Recordatorios pendientes de llamada.
+              <span id="cantRecord">0</span>
+            </h3>
+            <div id="recordatorioDiv"></div>
+          </div>
+        </section>
       </section>
     </main>
     <footer></footer>

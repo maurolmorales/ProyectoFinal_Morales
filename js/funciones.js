@@ -20,6 +20,11 @@ let recordatorioButtons = null;
 const recordatorioDiv = document.querySelector("#recordatorioDiv");
 const cantRecord = document.querySelector("#cantRecord");
 
+// Variables para "resumen"
+const resumenInput = document.getElementById("resumenInput");
+const resumenButton = document.getElementById("resumenButton");
+const resumenResultado = document.getElementById("resumenResultado");
+
 // Variable de control
 let moroConsulted = false;
 let IPConsulted = false;
@@ -182,6 +187,38 @@ const ingresoPago = async (idCliente, pago) => {
 };
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+const mostrarResumenCliente = async (id) => {
+  let clientes = await obtenerDatos(clientesDB);
+  let cuentas = await obtenerDatos(cuentasDB);
+  let pagos = await obtenerDatos(pagosDB);
+
+  const cliente = clientes.find((c) => c.id === id);
+  const cuenta = cuentas.find((c) => c.id === id);
+  const pago = pagos.find((p) => p.cuentaId === id);
+
+  const recordatorios = JSON.parse(localStorage.getItem("recordatorio")) || [];
+  const tieneRecordatorio = recordatorios.some((r) => r.id === id);
+
+  if (!cliente || !cuenta) {
+    return (resumenResultado.innerHTML = `<p>Cliente no encontrado</p>`);
+  }
+
+  resumenResultado.innerHTML = `
+    <div class="card p-3">
+      <h5>${cliente.nombre}</h5>
+      <p><strong>Saldo Pendiente:</strong> $${cuenta.saldo_pendiente}</p>
+      <p><strong>Estado:</strong> ${cuenta.estado}</p>
+      <p><strong>Último Pago:</strong> $${pago?.monto || "N/A"} (${
+    pago?.fecha_pago || "Sin registro"
+  })</p>
+      <p><strong>Recordatorio pendiente:</strong> ${
+        tieneRecordatorio ? "Sí" : "No"
+      }</p>
+    </div>
+  `;
+};
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 const obtenerDatos = (data) => {
   let result = fetch(data)
     .then((respuesta) => respuesta.json())
@@ -259,4 +296,10 @@ IPButton.addEventListener("click", (e) => {
     ingresoPago(IPidCliente.value, IPpago.value);
   }
   // console.log("click");
+});
+
+resumenButton.addEventListener("click", (e) => {
+  e.preventDefault();
+  const id = Number(resumenInput.value);
+  mostrarResumenCliente(id);
 });
